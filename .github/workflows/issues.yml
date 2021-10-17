@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Close Issue
         uses: peter-evans/close-issue@v1
-        if: endsWith(github.event.label.name, ' Question')) == true
+        if: endsWith(github.event.label.name, ' Question') == true
         with:
           comment: Please note this issue tracker is not a help forum. We recommend using [StackOverflow](https://stackoverflow.com/questions/tagged/jestjs) or our [discord channel](https://discord.gg/j6FKKQQrW9) for questions.
